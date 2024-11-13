@@ -1,14 +1,43 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="JadeApplication.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <main aria-labelledby="title">
-        <h2 id="title"><%: Title %>.</h2>
+        <main aria-labelledby="title">
         <p class="text-danger">
             <asp:Literal runat="server" ID="ErrorMessage" />
         </p>
-        <h4>Create a new account</h4>
+        <h2>Create a New Account</h2>
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
+
+        <div class="row">
+        <asp:Label runat="server" AssociatedControlID="FirstName" CssClass="col-md-2 col-form-label">FirstName</asp:Label>
+        <div class="col-md-10">
+            <asp:TextBox runat="server" ID="FirstName" CssClass="form-control" />
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="FirstName"
+            CssClass="text-danger" ErrorMessage="The First Name is required." />
+        </div>
+        </div>
+
+        <div class="row">
+        <asp:Label runat="server" AssociatedControlID="LastName" CssClass="col-md-2 col-form-label">LastName</asp:Label>
+        <div class="col-md-10">
+            <asp:TextBox runat="server" ID="LastName" CssClass="form-control" />
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="LastName"
+            CssClass="text-danger" ErrorMessage="The Last Name is required." />
+        </div>
+        </div>
+
+        <div class="row">
+        <asp:Label runat="server" AssociatedControlID="Username" CssClass="col-md-2 col-form-label">UserName</asp:Label>
+        <div class="col-md-10">
+            <asp:TextBox runat="server" ID="Username" CssClass="form-control" />
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="Username"
+            CssClass="text-danger" ErrorMessage="The First Name is required." />
+        </div>
+        </div>
+
+
+
         <div class="row">
             <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 col-form-label">Email</asp:Label>
             <div class="col-md-10">
@@ -17,6 +46,9 @@
                     CssClass="text-danger" ErrorMessage="The email field is required." />
             </div>
         </div>
+
+
+
         <div class="row">
             <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 col-form-label">Password</asp:Label>
             <div class="col-md-10">
@@ -34,11 +66,11 @@
                 <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
             </div>
-        </div>
+        </div><br />
         <div class="row">
-            <div class="offset-md-2 col-md-10">
+            <div >
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-outline-dark" />
-            </div>
-        </div>
+            </div>         
+        </div><br />
     </main>
 </asp:Content>
