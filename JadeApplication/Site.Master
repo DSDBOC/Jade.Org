@@ -48,6 +48,7 @@
                        
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="ViewGuidelines.aspx">Guidelines</a></li>
                          <li class="nav-item"><a class="nav-link" runat="server" href="~/Actors/Adminstrator/AdminLogin.aspx">Adminstrator</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Actors/Subject Expert/ExpertLogin.aspx">Subject Expert</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Actors/User Support Agent/UserSupportLogin.aspx">Support Agent</a></li>
