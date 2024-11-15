@@ -7,65 +7,65 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JadeApplication.Actors.Adminstrator
+namespace JadeApplication.Account.User
 {
 
 
-    public partial class AdminLogin
+    public partial class SubjectExpertDashboard
     {
 
         /// <summary>
-        /// ErrorMessage control.
+        /// CreateSpecialistLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder ErrorMessage;
+        protected global::System.Web.UI.WebControls.HyperLink CreateSpecialistLink;
 
         /// <summary>
-        /// FailureText control.
+        /// AssistUsersLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal FailureText;
+        protected global::System.Web.UI.WebControls.HyperLink AssistUsersLink;
 
         /// <summary>
-        /// AdminUserName control.
+        /// EditSpecialistInfoLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AdminUserName;
+        protected global::System.Web.UI.WebControls.HyperLink EditSpecialistInfoLink;
 
         /// <summary>
-        /// AdminPassword control.
+        /// CreateResourceLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AdminPassword;
+        protected global::System.Web.UI.WebControls.HyperLink CreateResourceLink;
 
         /// <summary>
-        /// RememberMe control.
+        /// EditResourceLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox RememberMe;
+        protected global::System.Web.UI.WebControls.HyperLink EditResourceLink;
 
         /// <summary>
-        /// RegisterHyperLink control.
+        /// ViewResourcesLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
+        protected global::System.Web.UI.WebControls.HyperLink ViewResourcesLink;
     }
 }

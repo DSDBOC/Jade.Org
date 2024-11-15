@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JadeApplication.Actors.Subject_Expert
+namespace JadeApplication.Actors.Adminstrator
 {
 
 
-    public partial class ExpertDashboard
+    public partial class CreateUser
     {
     }
 }

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace JadeApplication.Actors.Subject_Expert
 {
-    public partial class ExpertDashboard : System.Web.UI.Page
+    public partial class SubjectExpertDashboard : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

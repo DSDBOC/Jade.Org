@@ -165,13 +165,14 @@
     <Content Include="Actors\Adminstrator\AdminDashboard.aspx" />
     <Content Include="Actors\Adminstrator\AdminLogin.aspx" />
     <Content Include="Actors\Adminstrator\CreateResource.aspx" />
+    <Content Include="Actors\Adminstrator\CreateUser.aspx" />
     <Content Include="Actors\Adminstrator\EditResource.aspx" />
     <Content Include="Actors\Adminstrator\UpdateUser.aspx" />
-    <Content Include="Actors\EditResource.aspx" />
+    <Content Include="Actors\EditResources.aspx" />
     <Content Include="Actors\Subject Expert\AssistUsers.aspx" />
     <Content Include="Actors\Subject Expert\CreateSubjectSpec.aspx" />
     <Content Include="Actors\Subject Expert\EditSubjectSpec.aspx" />
-    <Content Include="Actors\Subject Expert\ExpertDashboard.aspx" />
+    <Content Include="Actors\Subject Expert\SubjectExpertDashboard.aspx" />
     <Content Include="Actors\Subject Expert\ExpertLogin.aspx" />
     <Content Include="Actors\User Support Agent\HandleEnquires.aspx" />
     <Content Include="Actors\User Support Agent\SanctionUsers.aspx" />
@@ -384,6 +385,13 @@
     <Compile Include="Actors\Adminstrator\CreateResource.aspx.designer.cs">
       <DependentUpon>CreateResource.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Actors\Adminstrator\CreateUser.aspx.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Actors\Adminstrator\CreateUser.aspx.designer.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Actors\Adminstrator\EditResource.aspx.cs">
       <DependentUpon>EditResource.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -398,11 +406,12 @@
     <Compile Include="Actors\Adminstrator\UpdateUser.aspx.designer.cs">
       <DependentUpon>UpdateUser.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Actors\EditResource.aspx.cs">
-      <DependentUpon>EditResource.aspx</DependentUpon>
+    <Compile Include="Actors\EditResources.aspx.cs">
+      <DependentUpon>EditResources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Actors\EditResource.aspx.designer.cs">
-      <DependentUpon>EditResource.aspx</DependentUpon>
+    <Compile Include="Actors\EditResources.aspx.designer.cs">
+      <DependentUpon>EditResources.aspx</DependentUpon>
     </Compile>
     <Compile Include="Actors\Subject Expert\AssistUsers.aspx.cs">
       <DependentUpon>AssistUsers.aspx</DependentUpon>
@@ -425,12 +434,12 @@
     <Compile Include="Actors\Subject Expert\EditSubjectSpec.aspx.designer.cs">
       <DependentUpon>EditSubjectSpec.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Actors\Subject Expert\ExpertDashboard.aspx.cs">
-      <DependentUpon>ExpertDashboard.aspx</DependentUpon>
+    <Compile Include="Actors\Subject Expert\SubjectExpertDashboard.aspx.cs">
+      <DependentUpon>SubjectExpertDashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Actors\Subject Expert\ExpertDashboard.aspx.designer.cs">
-      <DependentUpon>ExpertDashboard.aspx</DependentUpon>
+    <Compile Include="Actors\Subject Expert\SubjectExpertDashboard.aspx.designer.cs">
+      <DependentUpon>SubjectExpertDashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Actors\Subject Expert\ExpertLogin.aspx.cs">
       <DependentUpon>ExpertLogin.aspx</DependentUpon>
@@ -620,9 +629,8 @@
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <PropertyGroup>
-    <PreBuildEvent>copy "$(ProjectDir)YourFile.ascx" "$(ProjectDir)YourFile.html"
-
-</PreBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
