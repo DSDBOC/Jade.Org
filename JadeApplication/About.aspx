@@ -9,7 +9,17 @@
         }
     </style>
     <main aria-labelledby="title">
-        <h2 id="title"><%: Title %></h2>
+       \
+
+
+
+
+
+
+
+
+
+
         <hr />
       
         <p class="p-line-height3" >The Jamaican Association for Debating and Empowerment (JADE), founded in 2013 by UTech Jamaica alumnus Germaine Barrett, is a prominent organization in Jamaica dedicated to promoting debate, public speaking, and empowerment initiatives. JADE provides numerous programs and services, including workshops on effective communication, conflict management, and critical thinking skills. Through various initiatives, JADE supports the growth of debate clubs in schools and offers training to foster a culture of respectful discourse.</p>
